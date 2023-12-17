@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    </head>
+
+
+  <body>
+
+<a-scene>
+    <!-- Asset Management System -->
+
+    <a-assets>
+    <a-assets-item id="village" src="scene.gltf"></a-assets-item>
+    </a-assets>
+    <a-entity gltf-model="#village"></a-entity>
+
+    <a-entity light="intensity:2.5" position="-20 20 20"></a-entity>
+
+    <!-- Sky-->
+
+    <a-entity position="0 0 10">
+        <a-camera></a-camera>
+    </a-entity>
+
+
+
+
+<a-box color="yellow" width=".5" depth=".5" height="1.2" position="9 0 -2"
+       animation__drive="dur:5000; easing: linear; from:9 1 -2; to: 9 4 -2; loop: -1; property: position" ></a-box>
+
+<a-box color="blue" width="0.2" depth="0.1" height="0.2" position="-4 3 8"
+       animation__drive="dur:5000; easing: linear; from:-4 3 8; to: 4 3 8; loop: -1; property: position" ></a-box>         
+
+ 
+
+
+
+
+       
+
+
+
+ 
+</a-scene>
+    </body>
+</html>
